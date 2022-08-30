@@ -1,12 +1,10 @@
 import './App.css';
+import Header from './component/Header';
 
 function App() {
-    const name = 'Aadil';
-    const x = false;
     return (
         <>
-            <h1>{name}</h1>
-            <h2>{x ? 'yes' : 'no'}</h2>
+            <Header />
         </>
     );
 }
