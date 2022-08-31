@@ -1,0 +1,4 @@
+npm install react-icons --save
+npm i -g server
+npm run build
+serve -s buid -p 8000
