@@ -5,3 +5,4 @@ serve -s buid -p 8000
 npm i json-server
 "server": "json-server --watch db.json --port 5000"
 npm run server
+npm i react-router-dom

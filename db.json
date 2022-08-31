@@ -4,13 +4,19 @@
             "text": "Office meeting",
             "day": "Oct 10th at 21:00pm",
             "id": 5,
-            "reminder": true
+            "reminder": false
         },
         {
             "id": 2,
             "text": "Meeting at School",
             "day": "Feb 6th at 1:30pm",
-            "reminder": true
+            "reminder": false
+        },
+        {
+            "text": "Final Project",
+            "day": "Sep 01 2022 00:55:35",
+            "reminder": true,
+            "id": 6
         }
     ]
 }
