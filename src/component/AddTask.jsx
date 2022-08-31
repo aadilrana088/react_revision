@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 const AddTask = ({ onAdd }) => {
     const [text, setText] = useState('');
     const [day, setDay] = useState('');
-    const [remainder, setRemainder] = useState(false);
+    const [reminder, setReminder] = useState(false);
 
     const handleSubmit = (e) => {
         e.preventDefault();
@@ -12,11 +12,11 @@ const AddTask = ({ onAdd }) => {
             return;
         }
 
-        onAdd({ text, day, remainder });
+        onAdd({ text, day, reminder });
 
         setText('');
         setDay('');
-        setRemainder(false);
+        setReminder(false);
     };
 
     return (
@@ -43,9 +43,9 @@ const AddTask = ({ onAdd }) => {
                 <label htmlFor="remainder">Set Remainder</label>
                 <input
                     type="checkbox"
-                    checked={remainder}
-                    value={remainder}
-                    onChange={(e) => setRemainder(e.currentTarget.checked)}
+                    checked={reminder}
+                    value={reminder}
+                    onChange={(e) => setReminder(e.currentTarget.checked)}
                 />
             </div>
 
