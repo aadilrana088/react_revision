@@ -2,6 +2,7 @@ import './App.css';
 import Header from './component/Header';
 import Tasks from './component/Tasks';
 import { useState } from 'react';
+import AddTask from './component/AddTask';
 function App() {
     const [tasks, setTasks] = useState([
         {
@@ -23,6 +24,11 @@ function App() {
             remainder: false,
         },
     ]);
+
+    const addTask = (task) => {
+        console.log(task);
+    };
+
     const deleteTask = (id) => {
         console.log(id);
         setTasks(tasks.filter((task) => task.id !== id));
@@ -38,6 +44,7 @@ function App() {
     return (
         <div className="container">
             <Header />
+            <AddTask onAdd={addTask} />
             {tasks.length > 0 ? (
                 <Tasks
                     tasks={tasks}
