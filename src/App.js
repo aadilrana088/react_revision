@@ -5,26 +5,7 @@ import { useState } from 'react';
 import AddTask from './component/AddTask';
 function App() {
     const [showAddTask, setShowAddTask] = useState(false);
-    const [tasks, setTasks] = useState([
-        {
-            id: 1,
-            text: 'text1',
-            day: 'day1',
-            remainder: true,
-        },
-        {
-            id: 2,
-            text: 'text2',
-            day: 'day2',
-            remainder: true,
-        },
-        {
-            id: 3,
-            text: 'text3',
-            day: 'day3',
-            remainder: false,
-        },
-    ]);
+    const [tasks, setTasks] = useState([]);
 
     const addTask = (task) => {
         // console.log(task);
