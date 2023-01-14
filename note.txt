@@ -1,3 +1,8 @@
+Revise react using json server 
+Add a Task and and set a remainder for it and save it json file.
+
+Repo URL: https://github.com/aadilrana088/react_revision.git
+
 npm install react-icons --save
 npm i -g server
 npm run build
