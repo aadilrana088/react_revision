@@ -17,6 +17,12 @@
             "day": "Sep 01 2022 00:55:35",
             "reminder": true,
             "id": 6
+        },
+        {
+            "text": "Final task",
+            "day": "Sat Jan 14 2023 23:47:42",
+            "reminder": true,
+            "id": 7
         }
     ]
 }
